@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo Ecologico</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <header>
+        <h1>Mundo Ecológico</h1>
+        <p>¡¡¡ Siempre Ecologicos !!!</p>
+        <nav>
+            <ul>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Carrito de compras</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="carrusel">
+        <div class="producto">
+            <img src="producto 1.jpg" alt="Producto 1">
+            <h2>Producto 1</h2>
+            <p>Descripción del producto 1.</p>
+            <p>Precio: $XX.XX</p>
+            <button class="comprar-btn">Comprar</button>
+        </div>
+        
+        <div class="producto">
+            <img src="producto 2.jpg" alt="Producto 2">
+            <h2>Producto 2</h2>
+            <p>Descripción del producto 2.</p>
+            <p>Precio: $YY.YY</p>
+            <button class="comprar-btn">Comprar</button>
+        </div>
+        <div class="producto">
+            <img src="producto 3.jpg" alt="Producto 2">
+            <h2>Producto 3</h2>
+            <p>Descripción del producto 3.</p>
+            <p>Precio: $YY.YY</p>
+            <button class="comprar-btn">Comprar</button>
+        </div>
+        
+        <!-- Repite divs de producto para más productos -->
+    </div>
+    
+    <script src="script.js"></script>
+    <!--formulario-->
+    <section id="formulario">
+        <h2>Contacto</h2>
+        <form action="procesar_formulario.php" method="post">
+            <label for="nombre">Nombre y Apellido:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="dni">Número de DNI:</label>
+            <input type="text" id="dni" name="dni" required>
+
+            <label for="fechaNacimiento">Fecha de nacimiento:</label>
+            <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
+
+            <label for="codigoPostal">Código postal:</label>
+            <input type="text" id="codigoPostal" name="codigoPostal" required>
+
+            <label for="comentario">Comentario (máximo 100 caracteres):</label>
+            <textarea id="comentario" name="comentario" maxlength="100" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+</body>
+</html>

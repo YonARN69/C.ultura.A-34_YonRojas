@@ -1,0 +1,42 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.carrusel {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+}
+
+.producto {
+    flex: 0 0 30%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.producto img {
+    max-width: 100%;
+}
+
+/* Estilos para el botón de compra */
+.comprar-btn {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Estilos para el carrusel */
+.comprar-btn:hover {
+    background-color: #45A83E;
+}
+
